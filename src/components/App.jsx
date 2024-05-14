@@ -27,7 +27,7 @@ export default function VideoPlayer() {
   return (
     <main className="max-w-full w-screen mx-auto flex flex-col">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover bg-slate-500 -z-2"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-2"
         controls
         loop
         ref={videoRef}
@@ -37,7 +37,7 @@ export default function VideoPlayer() {
         <button onClick={togglePlay}>{isPlaying ? "Pause" : "Play"}</button>
         <span>Current Time: {Math.round(currentTime)}</span>
       </div> */}
-      <div className="flex items-center justify-center min-h-screen ">
+      <div className="flex items-center justify-center min-h-screen">
         <h1 className="text-white font-bold text-6xl z-10">Video Project</h1>
       </div>
     </main>
